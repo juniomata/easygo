@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EasyGo</title>
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="frontend/styles/main.css" />
+    <link 
+        href="https://fonts.googleapis.com/css?family=Assistant:400,600,700,800|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="icon" href="frontend/images/logoonly.png">
+  </head>
+  <body>
+    <!-- Semantic elements -->
+    <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+    <!-- Bootstrap navbar example -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/easygonavbar.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md-2">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="#">Booking</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+          </ul>
+
+          <!-- Mobile button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0">
+              Login
+            </button>
+          </form>
+          <!-- Desktop Button -->
+          <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+              Login
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center">
+        <h1>Explore Indonesia </h1> 
+        <h1> as Easy as Clicking</h1>
+        <p class="mt-3">
+            Just sit down and assign your preferences, <br>
+            we will take care of your itinerary
+        </p>
+        <a href="#" class="btn btn-get-started px-4 mt-4">
+            Get Started
+        </a>
+        
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section-stats 
+        row justify-content-center" id ="stats">
+          <div class="col-3 col-md-2 stats-detail">
+            <h2>10K+</h2>
+            <p>Customers</p>
+          </div>
+          <div class="col-3 col-md-2 stats-detail">
+            <h2>3K+</h2>
+            <p>Hotels</p>
+          </div>
+          <div class="col-3 col-md-2 stats-detail">
+            <h2>200+</h2>
+            <p>Destinations</p>
+          </div>
+          <div class="col-3 col-md-2 stats-detail">
+            <h2>1.4K+</h2>
+            <p>Partners</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="section-favourite" id= "favourite">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center section-favourite-heading">
+              <h2>Favorite Destinations</h2>
+              <p>Here are our customer's <br>
+                top favourite destinations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-favourite-content" id="favouriteContent">
+        <div class="container">
+          <div class="section-favourite-travel row justify-conntent-center">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-travel text-center d-flex flex-column"
+              style="background-image: url('frontend/images/favourite-dest/Group 7.png');">
+                <div class="travel-location">BALI</div>
+                <div class="travel-button mt-auto">
+                  <a href="details.html" class="btn btn-travel-details px-4">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-travel text-center d-flex flex-column"
+              style="background-image: url('frontend/images/favourite-dest/Group 8 Lombok.png');">
+                <div class="travel-location">LOMBOK</div>
+                <div class="travel-button mt-auto">
+                  <a href="#" class="btn btn-travel-details px-4">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-travel text-center d-flex flex-column"
+              style="background-image: url('frontend/images/favourite-dest/Group 6.png');">
+                <div class="travel-location">LABUAN BAJO</div>
+                <div class="travel-button mt-auto">
+                  <a href="#" class="btn btn-travel-details px-4">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-travel text-center d-flex flex-column"
+              style="background-image: url('frontend/images/favourite-dest/Group Bromo.png');">
+                <div class="travel-location">BROMO</div>
+                <div class="travel-button mt-auto">
+                  <a href="#" class="btn btn-travel-details px-4">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-networks" id="networks">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Our Networks</h2>
+              <p>Companies trust us <br>more than just a trip</p>
+             </div>
+             <div class="col-md-8 text-center">
+              <img src="frontend/images/logo networks/all-logo-networks.png" alt="Logo Partner" class="img-partner">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-testimonial-heading" id ="testimonialHeading">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2>They Are Loving Us</h2>
+              <p>What they say about <br> amazing moments they experienced</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonial-content" id ="testimonialContent">
+        <div class="container">
+          <div class="section-favourite-travel row justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img src="frontend/images/ava/nikita.png" alt="Customer"class="md-4 rounded circle">
+                  <h3 class="mb-4">Devina</h3>
+                  <p class="testimonial">
+                    “ Using EasyGo really help me to plan my holiday. 
+                    So simple and fast. The trip was also so fun. 
+                    I can't stop cheering the whole trip. “</p>
+                  <hr>
+                  <p class="trip-to mt-2">
+                    Trip to Bali
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img src="frontend/images/ava/reza.png" alt="Customer"class="md-4 rounded circle">
+                  <h3 class="mb-4">Baskara</h3>
+                  <p class="testimonial">
+                    “ Literally just clicking and 
+                    your whole holiday is planned.
+                    The most interesting thing is 
+                    all your conditions really can be adjusted. “</p>
+                  <hr>
+                  <p class="trip-to mt-2">
+                    Trip to Bromo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-testimonial text-center">
+                <div class="testimonial-content">
+                  <img src="frontend/images/ava/shayna.png" alt="Customer"class="md-4 rounded circle">
+                  <h3 class="mb-4">Shania</h3>
+                  <p class="testimonial">
+                    “ EasyGo is the answer of my holiday problems. 
+                    Friendly interface, easy to use, and a great holiday planner! 
+                    Love it! “</p>
+                  <hr>
+                  <p class="trip-to mt-2">
+                    Trip to Labuan Bajo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="#" class="btn btn-need-help px-4 mt-4 mx-1">
+                Need Help
+              </a>
+              <a href="#" class="btn btn-get-started px-4 mt-4 mx-1">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class = "section-footer class mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-lg-3">
+                  <h5>FEATURES</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>ACCOUNT</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Rewards</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>COMPANY</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Media</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>CONTACT US</h5>
+                  <ul class="list-unstyled">
+                    <li>Jakarta Selatan</li>
+                    <li>Indonesia</li>
+                    <li>0800 - 1111 - 2222</li>
+                    <li>support@easygo.id</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row border-top justify-content-center align-items-center pt-4">
+            <h6>2020 Copyright Easygo • All rights reserved</h6>
+          </div>
+        </div>
+    </footer>
+    <script src="frontend/libraries/retina/retina.js"></script>
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src= "frontend/libraries/retina/retina.min.js"></script>
+  </body>
+</html>
